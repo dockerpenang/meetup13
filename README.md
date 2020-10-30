@@ -57,7 +57,7 @@ services:
 ### Login to Amazon ECR
 `aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin 123456789101.dkr.ecr.ap-southeast-1.amazonaws.com`
 
-### Pushing imaage to Amazon ECR
+### Pushing image to Amazon ECR
 Tag the locally developed image to in the form `aws_account_id.dkr.ecr.region.amazonaws.com/repositoryname`
 
 ```docker tag sujaypillai/timestamper 123456789101.dkr.ecr.ap-southeast-1.amazonaws.com/timestamper:1.0```
