@@ -65,7 +65,12 @@ Tag the locally developed image to in the form `aws_account_id.dkr.ecr.region.am
 ```docker push 123456789101.dkr.ecr.ap-southeast-1.amazonaws.com/timestamper:1.0```
 
 ### Running your docker container on Amazon ECS
-```docker compose up```
+
+| Command                   | Description |
+|---------------------------|-------------|
+| ``` docker compose up ```                         |   This by default uses `docker-compose.yml`           |
+| ```docker compose up -f docker-compose-ecs.yml``` |   Specifying a particular compose file          |
+
 
 ### Check the status for your services running on Amazon ECS
 ```docker compose ps```
